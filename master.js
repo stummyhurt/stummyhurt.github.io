@@ -3,7 +3,7 @@ function styleStatus() {
     statusTxt = statusTxt.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     console.log(status);
 
-    statusEle = document.getElementById('status-text');
+    statusEle = document.getElementsByClassName('status-text')[0];
     statusEle.textContent = statusTxt;
 
     if (statusTxt.toLowerCase().includes('up')){
