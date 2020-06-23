@@ -1,0 +1,174 @@
+:root{
+    --backgColor: #000000;
+
+    --navBackColor: #333;
+    --navHovColor: #444;
+    --navTextSize: 1em;
+
+    --altBackColor: #232522;
+
+    --sectTitleSize: 2em;
+
+    --accentColor: #41A1EF;
+    --textColor: white;
+
+    --marginLR: auto;
+    --smolMarginLR: 2%;
+
+    --bodyMax: 1180px;
+    --borderRadius: 10px;
+}
+
+body{
+    max-width: var(--bodyMax);
+    margin-left: var(--marginLR);
+    margin-right: var(--marginLR);
+    font-family: arial;
+    color: var(--textColor);
+    position: relative;
+    background: var(--backgColor);
+}
+
+body p{
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.header{
+    background-color: var(--navBackColor);
+    padding-top: 24px;
+    padding-bottom: 12px;
+    display: flex;
+    color: var(--textColor);
+    font-size: 3em;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin: 0;
+    border-top-left-radius: var(--borderRadius);
+    border-top-right-radius: var(--borderRadius);
+    z-index: 1;
+}
+
+.navbar-container{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    overflow: hidden;
+    background-color: var(--navBackColor);
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+    z-index: 1;
+}
+
+.navbar-container img{
+    position: absolute;
+    height: 50px;
+    left: 0;
+    padding: 7px;
+}
+
+.navbar-container div{
+    float: none;
+}
+
+.navbar-container div a{
+    color: var(--textColor);
+    text-align: center;
+    text-decoration: none;
+    padding: 24px 32px;
+    display: block;
+    font-size: var(--navTextSize);
+    font-weight: bold;
+    border-radius: var(--borderRadius);
+    /* border: 1px whitesmoke solid; */
+}
+
+.navbar-container div a:hover{
+    background-color: var(--navHovColor);
+}
+
+section{
+    min-height: 100vh;
+    margin-top: 0;
+    padding-top: 7.5vh;
+}
+
+section > h1{
+    font-size: var(--sectTitleSize);
+}
+
+#status{
+  position: relative;
+  /*border: 10px solid green;*/
+}
+#status h1{
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border-radius: var(--borderRadius);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#status-text{
+    margin: 0;
+    padding: 10px;
+    border-radius: var(--borderRadius);
+    display: inline-block;
+}
+
+#status p{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-radius: var(--borderRadius);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: var(--altBackColor);
+}
+
+#faqs div{
+    margin-top: 0;
+    padding-top: 7.5vh;
+}
+
+#faqs a{
+    text-decoration: none;
+    color: var(--accentColor);
+}
+
+#faqs hr{
+    background-color: var(--accentColor);
+}
+
+@media screen and (max-width:1180px) {
+    .navbar-container{
+        border-radius: 0;
+    }
+    .header{
+        border-radius: 0;
+    }
+    body{
+        margin:0;
+    }
+    section{
+        margin-left: var(--smolMarginLR);
+        margin-right: var(--smolMarginLR);
+        padding-top: 5vh;
+    }
+}
