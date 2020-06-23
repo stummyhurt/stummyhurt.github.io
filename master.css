@@ -106,7 +106,7 @@ body p{
     position: -webkit-sticky;
     overflow: hidden;
     background-color: var(--navBackColor);
-    z-index: 1;
+    z-index: 10;
     border-bottom-left-radius: var(--borderRadius);
     border-bottom-right-radius: var(--borderRadius);
 }
@@ -143,10 +143,18 @@ body p{
     }
 }
 
+.anchor{
+    z-index: 0;
+    padding: 40px;
+    /* border: 1px red solid; */
+}
+
 section{
     min-height: 100vh;
     margin-top: 0;
-    padding-top: 7.5vh;
+    padding: 1rem;
+    /* border: 1px solid green; */
+    z-index: 1;
 }
 
 section > h1{
@@ -158,11 +166,11 @@ section hr{
     background-color: var(--accentColor);
 }
 
-#status{
+.status{
   position: relative;
-  /*border: 10px solid green;*/
+  /* border: 10px solid green; */
 }
-#status h1{
+.status h1{
   text-align: center;
   margin: 0;
   padding: 10px;
@@ -174,14 +182,14 @@ section hr{
   transform: translate(-50%, -50%);
 }
 
-#status-text{
+.status-text{
     margin: 0;
     padding: 10px;
     border-radius: var(--borderRadius);
     display: inline-block;
 }
 
-#status p{
+.status p{
     text-align: center;
     margin: 0;
     padding: 10px;
@@ -194,21 +202,21 @@ section hr{
     background-color: var(--altBackColor);
 }
 
-#faqs div{
+.faqs div{
     margin-top: 0;
-    padding-top: 7.5vh;
+    /* padding-top: 7.5vh; */
 }
 
-#faqs a{
+.faqs a{
     text-decoration: none;
     color: var(--accentColor);
 }
 
-#faqs hr{
+.faqs hr{
     background-color: var(--accentColor);
 }
 
-#faqs h2{
+.faqs h2{
     font-size: 1.7em;
     line-height: 2em;
 }
@@ -227,6 +235,5 @@ section hr{
         margin-left: var(--smolMarginLR);
         margin-right: var(--smolMarginLR);
         padding: 1.5rem;
-        padding-top: 10vh;
     }
 }
