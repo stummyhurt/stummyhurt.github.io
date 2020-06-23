@@ -2,12 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="master.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="smoothscroll.js"></script>
     <script type="text/javascript" src="master.js"></script>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="img/minecraft.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="master.css">
     <title>Minecraft Sexy Info</title>
   </head>
 
@@ -18,27 +25,27 @@
     Minecraft Sexy.
 </div>
 
-<div class="navbar-container">
-
-    <img src="img/minecraft.png" alt="">
-
-    <div>
-        <a href="#status">Status</a>
-    </div>
-    <div>
-        <a href="#about">About</a>
-    </div>
-    <div>
-        <a href="#faqs">FAQs</a>
-    </div>
-    <div>
-        <a href="#Acedemics">Acedemics</a>
-    </div>
-    <div>
-        <a href="#Goals">Interests</a>
-    </div>
-
-</div>
+<nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand" href="#status">
+        <img src="img/minecraft.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#faqs">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#goals">Something</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
 
 <section id="status">
     <h1>Status: <div id="status-text">Please enable javascript to see status!</div></h1>
@@ -47,7 +54,7 @@
 
 <section id="about">
     <h1>About</h1>
-    <p></p>
+    <p>the about section</p>
 </section>
 
 <section id="faqs">
@@ -72,7 +79,7 @@
 
     <div id="accessing">
         <hr>
-        <a href="#accessing" ><h2>How do I access media?</h2></a>
+        <a href="#accessing"><h2>How do I access media?</h2></a>
         <p>
             Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
         euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
@@ -110,7 +117,7 @@
     </div>
 </section>
 
-<section id="Acedemics">
+<section id="goals">
     <h1>Acedemics</h1>
     <p>&emsp;Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
     euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
@@ -124,7 +131,7 @@
     malesuada ac nunc et, sollicitudin pellentesque sapien.</p>
 </section>
 
-<section id="Goals">
+<section id="academics">
     <h1>Goals</h1>
     <p>&emsp;Nulla consequat sapien leo, vitae dignissim justo mattis eget. Vestibulum in nibh non
     sem efficitur imperdiet id id est. Morbi porttitor vestibulum magna, vel vulputate quam

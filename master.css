@@ -9,7 +9,7 @@
 
     --sectTitleSize: 2em;
 
-    --accentColor: #41A1EF;
+    --accentColor: #ff7ddf;
     --textColor: white;
 
     --marginLR: auto;
@@ -49,8 +49,8 @@ body p{
     border-top-right-radius: var(--borderRadius);
     z-index: 1;
 }
-
-.navbar-container{
+/*  old navbar
+.navbar{
     margin: 0;
     padding: 0;
     top: 0;
@@ -69,18 +69,19 @@ body p{
     z-index: 1;
 }
 
-.navbar-container img{
+.navbar img{
     position: absolute;
     height: 50px;
     left: 0;
     padding: 7px;
+    border: 1px red solid;
 }
 
-.navbar-container div{
+.navbar div{
     float: none;
 }
 
-.navbar-container div a{
+.navbar div a{
     color: var(--textColor);
     text-align: center;
     text-decoration: none;
@@ -89,11 +90,57 @@ body p{
     font-size: var(--navTextSize);
     font-weight: bold;
     border-radius: var(--borderRadius);
-    /* border: 1px whitesmoke solid; */
 }
 
-.navbar-container div a:hover{
+.navbar div a:hover{
     background-color: var(--navHovColor);
+} 
+*/
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    overflow: hidden;
+    background-color: var(--navBackColor);
+    z-index: 1;
+    border-bottom-left-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 10px;
+}
+
+.nav-item{
+    color: var(--textColor);
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    font-size: var(--navTextSize);
+    font-weight: bold;
+    border-radius: var(--borderRadius);
+}
+
+.nav-item:hover{
+    background-color: var(--navHovColor);
+}
+
+.nav-link{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .navbar-nav{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
 
 section{
@@ -104,6 +151,11 @@ section{
 
 section > h1{
     font-size: var(--sectTitleSize);
+    font-weight: bold; 
+}
+
+section hr{
+    background-color: var(--accentColor);
 }
 
 #status{
@@ -156,8 +208,13 @@ section > h1{
     background-color: var(--accentColor);
 }
 
+#faqs h2{
+    font-size: 1.7em;
+    line-height: 2em;
+}
+
 @media screen and (max-width:1180px) {
-    .navbar-container{
+    .navbar{
         border-radius: 0;
     }
     .header{
@@ -169,6 +226,7 @@ section > h1{
     section{
         margin-left: var(--smolMarginLR);
         margin-right: var(--smolMarginLR);
-        padding-top: 5vh;
+        padding: 1.5rem;
+        padding-top: 10vh;
     }
 }
