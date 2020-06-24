@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="smoothscroll.js"></script>
     <script type="text/javascript" src="master.js"></script>
@@ -14,63 +14,77 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="./master.css">
     <title>Minecraft Sexy Info</title>
-  </head>
-
+</head>
 
 <body onload="styleStatus();">
 
-<div class="header">
-    Minecraft Sexy.
-</div>
-
-<nav class="navbar navbar-expand-md navbar-dark">
-    <a class="navbar-brand" href="#status">
-        <img src="img/minecraft.png" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
+<nav id="mynavbar" class="navbar navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="#status"><img src="img/minecraft.png" alt="" height="40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#faqs">FAQs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#goals">Something</a>
-        </li>    
-      </ul>
-    </div>  
-  </nav>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#faqs">FAQs</a>
+            </li>
+    </div>
+</nav>
 
-<a id="status" class="anchor"></a>
-<section class="status">
-    <h1>Status: <div class="status-text">Please enable javascript to see status!</div></h1>
-    <p id="announcement">It's possible that this is a lie</p>
-</section>
+<div class="container">
 
-<a id="about" class="anchor"></a>
-<section class="about">
-    <h1>About</h1>
-    <p>the about section</p>
-</section>
+    <a id="status" class="anchor"></a>
+    <section class="status">
+        <h1>Status: <div id="status-text">Please enable javascript to see status!</div></h1>
+        <p id="announcement">It's possible that this is a lie</p>
+    </section>
 
-<a id="faqs" class="anchor"></a>
-<section class="faqs">
-    <h1>FAQs</h1>
-    <p>
-        If you have a question about using Emby or something similar, check here for a quick answer. 
-        If your question is not here or wasn't answered, feel free to get ahold of me.
-    </p>
-    <hr>
-
-    <a id="joining" class="anchor"></a>
-    <div id="joining">
-        <a href="#joining"><h2>How do I join?</h2></a>
+    <a id="about" class="anchor"></a>
+    <section class="about">
+        <h1>About</h1>
+        <p>
+            Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
+            euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
+            justo, congue at luctus non, ullamcorper quis ante. Duis vel metus varius, ullamcorper
+            lacus eget, dapibus risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
+            dapibus. Vivamus dui libero, bibendum vehicula 
+        </p>
+    </section>
+    
+    <a id="faqs" class="anchor"></a>
+    <section class="faqs">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+            If you have a question about using Emby or something similar, check here for a quick answer. 
+            If your question is not here or wasn't answered, feel free to get ahold of me.
+        </p>
+        <ul>
+          <li><a href="#joining">How do I join?</a></li>
+          <li><a href="#accessing">How do I access media?</a></li>
+          <li><a href="#downloading">Can I download media?</a></li>
+          <li><a href="#requesting">Can I request media?</a></li>
+        </ul>
+        <hr>
+    
+        <h2 id="joining">How do I join? <a href="#joining">#</a></h2>
+        <p>
+            Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
+            euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
+            justo, congue at luctus non, ullamcorper quis ante. Duis vel metus varius, ullamcorper
+            lacus eget, dapibus risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
+            dapibus. Vivamus dui libero, bibendum vehicula 
+        </p>
+        <hr>
+    
+        <h2 id="accessing">How do I access media? <a href="#accessing">#</a></h2>
         <p>
             Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
         euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
@@ -80,11 +94,8 @@
         dapibus. Vivamus dui libero, bibendum vehicula 
         </p>
         <hr>
-    </div>
-
-    <a id="accessing" class="anchor"></a>
-    <div id="accessing">
-        <a href="#accessing"><h2>How do I access media?</h2></a>
+    
+        <h2 id="downloading">Can I download media? <a href="#downloading">#</a></h2>
         <p>
             Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
         euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
@@ -94,11 +105,8 @@
         dapibus. Vivamus dui libero, bibendum vehicula 
         </p>
         <hr>
-    </div>
-
-    <a id="downloading" class="anchor"></a>
-    <div id="downloading">
-        <a href="#downloading"><h2>Can I download media?</h2></a>
+    
+        <h2 id="requesting">Can I request media? <a href="#requesting">#</a></h2>
         <p>
             Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
         euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
@@ -107,50 +115,9 @@
         Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
         dapibus. Vivamus dui libero, bibendum vehicula 
         </p>
-        <hr>
-    </div>
+    </section>
 
-    <a id="reqeusting" class="anchor"></a>
-    <div id="requesting">
-        <a href="#requesting"><h2>Can I request media?</h2></a>
-        <p>
-            Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
-        euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
-        justo, congue at luctus non, ullamcorper quis ante. Duis vel metus varius, ullamcorper
-        lacus eget, dapibus risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
-        dapibus. Vivamus dui libero, bibendum vehicula 
-        </p>
-    </div>
-</section>
-
-<a id="goals" class="anchor"></a>
-<section class="goals">
-    <h1>Acedemics</h1>
-    <p>&emsp;Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
-    euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
-    justo, congue at luctus non, ullamcorper quis ante. Duis vel metus varius, ullamcorper
-    lacus eget, dapibus risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-    Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
-    dapibus. Vivamus dui libero, bibendum vehicula vestibulum vel, convallis vitae turpis.
-    Quisque pretium lorem pellentesque libero iaculis, ac efficitur nulla faucibus. Fusce
-    vel turpis ut ipsum congue interdum. Nulla in est tortor. Suspendisse fermentum interdum
-    venenatis. Nam et felis elementum, finibus libero sed, iaculis ipsum. Fusce nulla urna,
-    malesuada ac nunc et, sollicitudin pellentesque sapien.</p>
-</section>
-
-<a id="academics" class="anchor"></a>
-<section class="academics">
-    <h1>Goals</h1>
-    <p>&emsp;Nulla consequat sapien leo, vitae dignissim justo mattis eget. Vestibulum in nibh non
-    sem efficitur imperdiet id id est. Morbi porttitor vestibulum magna, vel vulputate quam
-    pretium a. Nulla mi quam, aliquet in finibus sed, mattis eget urna. Mauris condimentum
-    congue risus vel malesuada. Nunc euismod venenatis nibh id commodo. Quisque finibus enim
-    et ipsum hendrerit venenatis. Nulla ac purus eu tortor interdum feugiat vel sed tellus.
-    Aliquam pretium, enim in malesuada convallis, risus purus facilisis libero, sit amet
-    tempus quam ante id arcu. Nam odio magna, pellentesque ac dapibus non, tempor a ante.
-    Quisque eu libero lorem. Sed eget aliquam magna.</p>
-</section>
+</div>
 
 </body>
 </html>

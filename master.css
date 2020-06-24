@@ -1,9 +1,9 @@
 :root{
-    --backgColor: #000000;
+    --backgColor: #000;
 
-    --navBackColor: #333;
+    --navBackColor: #222;
     --navHovColor: #444;
-    --navTextSize: 1em;
+    --navTextSize: 1.2rem;
 
     --altBackColor: #232522;
 
@@ -34,86 +34,10 @@ body p{
     line-height: 1.6em;
 }
 
-.header{
+#mynavbar{
     background-color: var(--navBackColor);
-    padding-top: 24px;
-    padding-bottom: 12px;
-    display: flex;
-    color: var(--textColor);
-    font-size: 3em;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    margin: 0;
-    border-top-left-radius: var(--borderRadius);
-    border-top-right-radius: var(--borderRadius);
-    z-index: 1;
-}
-/*  old navbar
-.navbar{
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    position: sticky;
-    position: -webkit-sticky;
-    overflow: hidden;
-    background-color: var(--navBackColor);
-    list-style: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-bottom-left-radius: var(--borderRadius);
     border-bottom-right-radius: var(--borderRadius);
-    z-index: 1;
-}
-
-.navbar img{
-    position: absolute;
-    height: 50px;
-    left: 0;
-    padding: 7px;
-    border: 1px red solid;
-}
-
-.navbar div{
-    float: none;
-}
-
-.navbar div a{
-    color: var(--textColor);
-    text-align: center;
-    text-decoration: none;
-    padding: 24px 32px;
-    display: block;
-    font-size: var(--navTextSize);
-    font-weight: bold;
-    border-radius: var(--borderRadius);
-}
-
-.navbar div a:hover{
-    background-color: var(--navHovColor);
-} 
-*/
-
-.navbar{
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    position: sticky;
-    position: -webkit-sticky;
-    overflow: hidden;
-    background-color: var(--navBackColor);
-    z-index: 10;
-    border-bottom-left-radius: var(--borderRadius);
-    border-bottom-right-radius: var(--borderRadius);
-}
-
-.navbar-brand img{
-    height: 40px;
-    padding-left: 10px;
 }
 
 .nav-item{
@@ -130,35 +54,12 @@ body p{
 .nav-item:hover{
     background-color: var(--navHovColor);
 }
+.nav-link:hover{
+    color: var(--accentColor);
+}
 
 .nav-link{
     text-align: center;
-}
-
-.navbar-toggler{
-    margin-right: 10px;
-}
-
-@media screen and (min-width: 768px){
-    .navbar-nav{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-}
-
-.anchor{
-    z-index: 0;
-    padding: 40px;
-    /* border: 1px red solid; */
-}
-
-section{
-    min-height: 100vh;
-    margin-top: 0;
-    padding: 1rem;
-    /* border: 1px solid green; */
-    z-index: 1;
 }
 
 section > h1{
@@ -170,23 +71,33 @@ section hr{
     background-color: var(--accentColor);
 }
 
-.status{
-  position: relative;
-  /* border: 10px solid green; */
-}
-.status h1{
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  border-radius: var(--borderRadius);
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+section{
+    z-index: 1;
 }
 
-.status-text{
+/* 
+
+STATUS SECTION 
+
+*/
+
+.status{
+    min-height: 100vh;
+    position: relative;
+    /* border: 10px solid green; */
+  }
+.status h1{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#status-text{
     margin: 0;
     padding: 10px;
     border-radius: var(--borderRadius);
@@ -206,6 +117,20 @@ section hr{
     background-color: var(--altBackColor);
 }
 
+/* 
+
+ABOUT SECTION
+
+*/
+
+
+
+/* 
+
+FAQS SECTION
+
+*/
+
 .faqs div{
     margin-top: 0;
     /* padding-top: 7.5vh; */
@@ -221,23 +146,23 @@ section hr{
 }
 
 .faqs h2{
-    font-size: 1.7em;
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+.faqs ul{
     line-height: 2em;
 }
 
-@media screen and (max-width:1180px) {
-    .navbar{
+/* navbar smaller than max width */
+@media screen and (max-width:1200px){
+    #mynavbar{
         border-radius: 0;
     }
-    .header{
-        border-radius: 0;
-    }
-    body{
-        margin:0;
-    }
-    section{
-        margin-left: var(--smolMarginLR);
-        margin-right: var(--smolMarginLR);
-        padding: 1.5rem;
+}
+
+@media screen and (max-width:576px){
+    .nav-link{
+        text-align: right;
+        margin-right: 10px;
     }
 }
