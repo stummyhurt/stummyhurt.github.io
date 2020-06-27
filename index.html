@@ -37,9 +37,14 @@
             </li>
         </ul>
     </div>
+    
 </nav>
 
+
+
 <div class="container">
+
+    <button class="btn btn-dark btn-lg" onclick="scrollToTop()" id="scrollToTopButton" title="Go to top"><img class="img-fluid" src="./img/uparrow.png" alt=""></button>
 
     <a id="status" class="anchor"></a>
     <section class="status">
@@ -86,6 +91,11 @@
           <li><a href="#connection-issues">Why can't I connect?</a></li>
           <li><a href="#playback-issues">Video keeps freezing/doesn't play</a></li>
           <li><a href="#logging-in">How do I log in?</a></li>
+          <ul>
+              <li><a href="#logging-in-computers">Browsers/Computers</a></li>
+              <li><a href="#logging-in-phones">Phones</a></li>
+              <li><a href="#logging-in-tvs">Consoles/TVs</a></li>
+          </ul>
           <li><a href="#media-language">This video doesn't have subtitles/has audio in the wrong language!</a></li>
         </ul>
         <hr>
@@ -97,7 +107,7 @@
                 <li>Tell me your display name.</li>
                 <li>If I decide to add you, I will get back to you once I've added your account.</li>
                 <li>Once added, you should get an email similar to this one. 
-                    Click the link that says <code>I Confirm This Link</code><br><br>
+                    Click the link that says <code>I Confirm This Link</code>
                     <img src="./img/accountlink.png" class="img-fluid" alt="image">
                 </li>
                 <li>Done!</li>
@@ -159,23 +169,53 @@
         <h3 id="logging-in">How do I log in? <a href="#logging-in">#</a></h3>
         <p>
             As of now, the log in process varies between devices. I've tried to cover the main devices here.
-            <h5>Browsers Chrome/Firefox/Safari/Edge</h5>
+            <ul>
+                <li><a href="#logging-in-computers">Browsers/Computers</a></li>
+                <li><a href="#logging-in-phones">Phones</a></li>
+                <li><a href="#logging-in-tvs">Consoles/TVs</a></li>
+            </ul>
+            <h5>Browsers/Computers <a href="#logging-in-computers" id="logging-in-computers">#</a></h5>
+            Currently there is an Emby app for Windows, but I recommend the web client if you aren't interested in 
+            downloading media and would fine just streaming.
             <ol>
                 <li>Go to <a target="_blank" href="https://app.emby.media"><code>app.emby.media</code></a></li>
                 <li>Click <code>Next</code></li>
                 <li>Enter your <code>Username/Email</code> and <code>Password</code> and click <code>Sign In</code>.</li>
                 <li>If everything went well, you should be at a screen like this. Click <code>Minecraft Sexy</code> or 
-                    whatever server you want to browse. <br><br>
+                    whatever server you want to browse.
                     <img class="img-fluid" src="./img/browserlogin.png" alt="">
                 </li>
-                <li>Done! From there, you can browse media and what stuff.</li>
+                <li>Done! From there, you can browse media and watch stuff.</li>
             </ol>
 
-            <h5>Windows</h5>
+            <h5>Phones <a href="#logging-in-phones" id="logging-in-phones">#</a></h5>
+            Following the steps above would also work on your phone, since you're essentially going to a website 
+            through a web browser. However, if you would like to use an app, these steps will get you there.
             <ol>
-                <li>The windows app isnt that good right now.</li>
-                <li>Use a browser</li>
-                <li>Moving on...</li>
+                <li>Download the Emby from the app store on your phone.</li>
+                <li>Open the app and tap <code>Next</code></li>
+                <li>Enter your <code>Username/Email</code> and <code>Password</code> and click <code>Sign In</code>.</li>
+                <li>You should be a screen like this one. Click on the server you want to browse.
+                    <img src="./img/phonelogin.jpg" class="img-fluid" alt="" width="300px">
+                </li>
+                <li>Done! Go crazy.</li>
+            </ol>
+
+            <h5>Consoles/TVs <a href="#logging-in-tvs" id="logging-in-tvs">#</a></h5>
+            Not all TVs will have an Emby app available to install. If yours does not, but you have a web browser available, 
+            I recommend going to <code><a href="https://tv.emby.media" target="_blank">tv.emby.media</a></code> and skipping to <code>Step 2</code>.
+            <ol>
+                <li>Download the Emby app onto your TV and open it.</li>
+                <li>Hit <code>Next</code></li>
+                <li>You should see a screen similar to this one. Simply follow the directions on the screen.
+                    <ol>
+                        <li>Take note of the PIN code on the screen</li>
+                        <li><strong>On another device</strong>, go to <code><a href="https://emby.media/pin" target="_blank">emby.media/pin</a></code></li>
+                        <li>Enter your <code>Email/Username</code>, <code>Password</code>, and finally, the <code>PIN code</code> that is on your TV's screen</li>
+                    </ol>
+                    <img src="./img/tvlogin.png" class="img-fluid" alt="">
+                </li>
+                <li>Done!</li>
             </ol>
         </p>
         <hr>

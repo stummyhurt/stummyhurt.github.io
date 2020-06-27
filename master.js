@@ -30,3 +30,21 @@ function readTextFile(file){
     rawFile.send(null);
     return out;
 }
+
+// scroll to top button
+
+window.onscroll = function() {onScroll();};
+
+function onScroll() {
+    topButton = document.getElementById('scrollToTopButton');
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20  ){
+        topButton.style.display = "block";
+    }else{
+        topButton.style.display = "none";
+    }
+}
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

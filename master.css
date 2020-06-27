@@ -10,7 +10,7 @@
     --sectTitleSize: 2em;
 
     --accentColor: #ff7ddf;
-    --accentColor2: #ff7ddf;
+    --accentColor2: #7653ff;
     --textColor: white;
 
     --marginLR: auto;
@@ -96,6 +96,33 @@ code{
     border-radius: var(--borderRadius);
     padding: 5px;
 }
+
+#scrollToTopButton{
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    z-index: 2;
+    border: none;
+    outline: none;
+    background-color: var(--accentColor);
+    cursor: pointer;
+    border-radius: var(--borderRadius);
+}
+
+#scrollToTopButton img{
+    width: 30px;
+    height: 30px;
+}
+
+#scrollToTopButton:hover{
+    background-color: var(--accentColor2);
+}
+
+img{
+    margin: 1rem;
+}
+
 
 /* 
 
