@@ -127,6 +127,10 @@ img{
     max-height: 400px;
 }
 
+a{
+    outline: none;
+}
+
 
 /* 
 
