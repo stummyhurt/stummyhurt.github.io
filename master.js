@@ -45,7 +45,12 @@ function onScroll() {
 }
 
 function scrollToTop() {
+    $("html, body").animate({scrollTop: 0}, "slow", function() {
+        // window.location.hash = "";
+        history.pushState(null,null,' ')
+    });
+
     // document.body.scrollTop = 0;
     // document.documentElement.scrollTop = 0;
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    // window.scrollTo({top: 0, behavior: 'smooth'});
 }

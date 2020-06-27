@@ -28,6 +28,7 @@ body{
     color: var(--textColor);
     position: relative;
     background: var(--backgColor);
+    scroll-behavior: smooth;
 }
 
 p{
