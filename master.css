@@ -10,6 +10,7 @@
     --sectTitleSize: 2em;
 
     --accentColor: #ff7ddf;
+    --accentColor2: #ff7ddf;
     --textColor: white;
 
     --marginLR: auto;
@@ -29,9 +30,14 @@ body{
     background: var(--backgColor);
 }
 
-body p{
-    font-size: 1.2em;
-    line-height: 1.6em;
+p{
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+}
+
+ol, li, ul{
+    font-size: 1rem;
+    line-height: 1.9rem;
 }
 
 #mynavbar{
@@ -62,9 +68,18 @@ body p{
     text-align: center;
 }
 
-section > h1{
+/* h1{
     font-size: var(--sectTitleSize);
     font-weight: bold; 
+}
+
+h2{
+    font-size: 1.5rem;
+    line-height: 2em;
+} */
+
+h1,h2,h3,h4,h5{
+    font-weight: bold;
 }
 
 section hr{
@@ -73,6 +88,13 @@ section hr{
 
 section{
     z-index: 1;
+}
+
+code{
+    color: var(--accentColor2);
+    background-color: var(--altBackColor);
+    border-radius: var(--borderRadius);
+    padding: 5px;
 }
 
 /* 
@@ -145,10 +167,6 @@ FAQS SECTION
     background-color: var(--accentColor);
 }
 
-.faqs h2{
-    font-size: 1.5rem;
-    line-height: 2em;
-}
 .faqs ul{
     line-height: 2em;
 }

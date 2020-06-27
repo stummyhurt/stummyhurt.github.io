@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="smoothscroll.js"></script>
@@ -34,6 +35,7 @@
             <li class="nav-item">
                 <a class="nav-link active" href="#faqs">FAQs</a>
             </li>
+        </ul>
     </div>
 </nav>
 
@@ -42,19 +44,30 @@
     <a id="status" class="anchor"></a>
     <section class="status">
         <h1>Status: <div id="status-text">Please enable javascript to see status!</div></h1>
-        <p id="announcement">It's possible that this is a lie</p>
+        <p id="announcement">This page is a work in progress.</p>
     </section>
 
     <a id="about" class="anchor"></a>
     <section class="about">
         <h1>About</h1>
         <p>
-            Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
-            euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
-            justo, congue at luctus non, ullamcorper quis ante. Duis vel metus varius, ullamcorper
-            lacus eget, dapibus risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
-            dapibus. Vivamus dui libero, bibendum vehicula 
+            Minecraft Sexy is an service, spread mainly through word of mouth, 
+            that allows users to request and consume media using services such as Emby, Sonarr, 
+            Radarr, Jackett, and Ombi. This page will allow me to communicate
+            the status of the service, along with some information regarding 
+            questions people may have about the service. Some information about each service that 
+            users can interact will follows.
+        </p>
+
+        <h3>Emby</h3>
+        <p>
+            Emby is the front-end of the whole operation that allows you to watch and download content
+            from the host server.
+        </p>
+
+        <h3>Ombi</h3>
+        <p>
+            Ombi is a simplified way of requesting media. This software has been somewhat unstable in the past.
         </p>
     </section>
     
@@ -70,21 +83,30 @@
           <li><a href="#accessing">How do I access media?</a></li>
           <li><a href="#downloading">Can I download media?</a></li>
           <li><a href="#requesting">Can I request media?</a></li>
+          <li><a href="#connection-issues">Why can't I connect?</a></li>
+          <li><a href="#playback-issues">Video keeps freezing/doesn't play</a></li>
+          <li><a href="#logging-in">How do I log in?</a></li>
+          <li><a href="#media-language">This video doesn't have subtitles/has audio in the wrong language!</a></li>
         </ul>
         <hr>
     
-        <h2 id="joining">How do I join? <a href="#joining">#</a></h2>
+        <h3 id="joining">How do I join? <a href="#joining">#</a></h3>
         <p>
-            Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
-            euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
-            justo, congue at luctus non, ullamcorper quis ante. Duis vel metus varius, ullamcorper
-            lacus eget, dapibus risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
-            dapibus. Vivamus dui libero, bibendum vehicula 
+            <ol>
+                <li>Make an account <a target="_blank" href="http://emby.media/community/index.php?/register">here</a>. Take note of your Display Name</li>
+                <li>Tell me your display name.</li>
+                <li>If I decide to add you, I will get back to you once I've added your account.</li>
+                <li>Once added, you should get an email similar to this one. 
+                    Click the link that says <code>I Confirm This Link</code><br><br>
+                    <img src="./img/accountlink.png" class="img-fluid" alt="image">
+                </li>
+                <li>Done!</li>
+                <li>Now you're able to move to steps for <a href="#logging-in">logging in</a></li>
+            </ol> 
         </p>
         <hr>
     
-        <h2 id="accessing">How do I access media? <a href="#accessing">#</a></h2>
+        <h3 id="accessing">How do I access media? <a href="#accessing">#</a></h3>
         <p>
             Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
         euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
@@ -95,7 +117,7 @@
         </p>
         <hr>
     
-        <h2 id="downloading">Can I download media? <a href="#downloading">#</a></h2>
+        <h3 id="downloading">Can I download media? <a href="#downloading">#</a></h3>
         <p>
             Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
         euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
@@ -106,7 +128,13 @@
         </p>
         <hr>
     
-        <h2 id="requesting">Can I request media? <a href="#requesting">#</a></h2>
+        <h3 id="requesting">Can I request media? <a href="#requesting">#</a></h3>
+        <p>
+            yes you can.
+        </p>
+        <hr>
+
+        <h3 id="connection-issues">Why can't I connect? <a href="#connection-issues">#</a></h3>
         <p>
             Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
         euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
@@ -115,6 +143,53 @@
         Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
         dapibus. Vivamus dui libero, bibendum vehicula 
         </p>
+        <hr>
+
+        <h3 id="playback-issues">Video keeps freezing/doesn't play <a href="#playback-issues">#</a></h3>
+        <p>
+            Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
+        euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
+        justo, congue at luctus non, ullamcorper quis ante. Duis vel metus varius, ullamcorper
+        lacus eget, dapibus risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
+        dapibus. Vivamus dui libero, bibendum vehicula 
+        </p>
+        <hr>
+
+        <h3 id="logging-in">How do I log in? <a href="#logging-in">#</a></h3>
+        <p>
+            As of now, the log in process varies between devices. I've tried to cover the main devices here.
+            <h5>Browsers Chrome/Firefox/Safari/Edge</h5>
+            <ol>
+                <li>Go to <a target="_blank" href="https://app.emby.media"><code>app.emby.media</code></a></li>
+                <li>Click <code>Next</code></li>
+                <li>Enter your <code>Username/Email</code> and <code>Password</code> and click <code>Sign In</code>.</li>
+                <li>If everything went well, you should be at a screen like this. Click <code>Minecraft Sexy</code> or 
+                    whatever server you want to browse. <br><br>
+                    <img class="img-fluid" src="./img/browserlogin.png" alt="">
+                </li>
+                <li>Done! From there, you can browse media and what stuff.</li>
+            </ol>
+
+            <h5>Windows</h5>
+            <ol>
+                <li>The windows app isnt that good right now.</li>
+                <li>Use a browser</li>
+                <li>Moving on...</li>
+            </ol>
+        </p>
+        <hr>
+
+        <h3 id="media-language">This video doesn't have subtitles/has audio in the wrong language! <a href="#media-language">#</a></h3>
+        <p>
+            Quisque varius lorem mauris, a pulvinar nisi volutpat ut. Sed lectus sem, facilisis eget
+        euismod ut, consequat vel augue. Nam efficitur vehicula pellentesque. Vestibulum lectus
+        justo, congue at luctus non, ullamcorper quis ante. Duis vel metus varius, ullamcorper
+        lacus eget, dapibus risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Quisque tempus placerat orci in eleifend. Integer tristique massa et justo lacinia
+        dapibus. Vivamus dui libero, bibendum vehicula 
+        </p>
+        <hr>
     </section>
 
 </div>
