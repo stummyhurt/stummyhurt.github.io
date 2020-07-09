@@ -1,7 +1,7 @@
 :root{
     --backgColor: #000;
 
-    --navBackColor: #222;
+    --navBackColor: #232522;
     --navHovColor: #444;
     --navTextSize: 1.2rem;
 
@@ -21,13 +21,16 @@
 }
 
 body{
+    background-image: url("./img/marble.jpg");
+    background-color: var(--backgColor);
+    background-size: contain;
+
     max-width: var(--bodyMax);
     margin-left: var(--marginLR);
     margin-right: var(--marginLR);
     font-family: arial;
     color: var(--textColor);
     position: relative;
-    background: var(--backgColor);
     scroll-behavior: smooth;
 }
 
@@ -45,6 +48,9 @@ ol, li, ul{
     background-color: var(--navBackColor);
     border-bottom-left-radius: var(--borderRadius);
     border-bottom-right-radius: var(--borderRadius);
+    opacity: .9;
+    /* height: 80px; */
+
 }
 
 .nav-item{
