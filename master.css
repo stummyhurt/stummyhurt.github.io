@@ -75,6 +75,10 @@ ol, li, ul{
     text-align: center;
 }
 
+#brandimg{
+    border-radius: var(--borderRadius);
+    margin: 0;
+}
 /* h1{
     font-size: var(--sectTitleSize);
     font-weight: bold; 
