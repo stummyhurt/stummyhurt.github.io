@@ -151,6 +151,7 @@ STATUS SECTION
 .status{
     min-height: 100vh;
     position: relative;
+    text-align: center;
     /* border: 10px solid green; */
   }
 .status h1{
@@ -175,13 +176,27 @@ STATUS SECTION
     text-align: center;
     margin: 0;
     padding: 10px;
-    border-radius: var(--borderRadius);
     position: absolute;
     top: 40%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    
+}
+
+#announcement{
+    margin: 0;
+    padding: 10px;
+    border-radius: var(--borderRadius);
+    display: inline-block;
     background-color: var(--altBackColor);
+    position: absolute;
+    top: calc(40% + 3rem);
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }
 
 /* 
@@ -227,5 +242,8 @@ FAQS SECTION
     .nav-link{
         text-align: right;
         margin-right: 10px;
+    }
+    .status p,h1,#announcement{
+        width: 90%;
     }
 }

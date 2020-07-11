@@ -1,10 +1,19 @@
-function styleStatus() {
-    statusTxt = readTextFile('status.txt');
+function init() {
+    styleStatusSect();
+}
+
+function styleStatusSect() {
+    statusTxt = readTextFile('var/status.txt');
     statusTxt = statusTxt.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    announceTxt = readTextFile('var/announcement.txt');
+    announceTxt = announceTxt.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     console.log(status);
 
     statusEle = document.getElementById('status-text');
     statusEle.textContent = statusTxt;
+
+    announceEle = document.getElementById('announcement');
+    announceEle.textContent = announceTxt;
 
     if (statusTxt.toLowerCase().includes('up')){
         // server working
