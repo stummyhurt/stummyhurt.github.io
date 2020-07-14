@@ -10,7 +10,7 @@
     --sectTitleSize: 2em;
 
     --accentColor: #ff7ddf;
-    --accentColor2: #7653ff;
+    --accentColor2: #ff7ddf;
     --textColor: white;
 
     --marginLR: auto;
@@ -39,7 +39,7 @@ p{
     line-height: 1.75rem;
 }
 
-ol, li, ul{
+li{
     font-size: 1rem;
     line-height: 1.9rem;
 }
