@@ -4,9 +4,9 @@ function init() {
 
 function styleStatusSect() {
     statusTxt = readTextFile('var/status.txt');
-    statusTxt = statusTxt.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    // statusTxt = statusTxt.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     announceTxt = readTextFile('var/announcement.txt');
-    announceTxt = announceTxt.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    // announceTxt = announceTxt.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     console.log(status);
 
     statusEle = document.getElementById('status-text');
@@ -25,13 +25,14 @@ function styleStatusSect() {
 }
 
 function readTextFile(file){
-    var out = "Something went wrong getting the status";
+    var out = "Something went wrong reading " + file;
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function(){
         if(rawFile.readyState === 4){
             if(rawFile.status === 200 || rawFile.status == 0){
                 var allText = rawFile.responseText;
+                allText = allText.replace(/</g, "&lt;").replace(/>/g, "&gt;");
                 out = allText;
             }
         }
