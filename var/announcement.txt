@@ -1,1 +1,1 @@
-Server upgrade coming soon! During this upgrade time, all services except this page will be down. Server status will be communicated through this page. As of now, no exact time for this upgrade has been scheduled.
+I'll be upgrading the server around Tuesday, July 15th, 2020 at 6PM CST. Upgrades will hopefully finish before midnight idk.
