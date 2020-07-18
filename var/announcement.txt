@@ -1,1 +1,1 @@
-This is probably gonna take weeks to get back to normal. I had to delete 14TB of media and need to redownload it all. I also need to learn a lot about nginx and hosting shit.
+Almost finished with everything except downloading all 14TBs of media back. Will be adding users back soon.
