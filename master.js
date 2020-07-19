@@ -18,6 +18,9 @@ function styleStatusSect() {
     if (statusTxt.toLowerCase().includes('up')){
         // server working
         statusEle.style.backgroundColor = 'green';
+    }else if(statusTxt.toLowerCase().includes('partial')){
+        //partial
+        statusEle.style.backgroundColor = 'yellow';
     }else{
         //server down
         statusEle.style.backgroundColor = 'red';
