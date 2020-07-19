@@ -20,7 +20,7 @@ function styleStatusSect() {
         statusEle.style.backgroundColor = 'green';
     }else if(statusTxt.toLowerCase().includes('partial')){
         //partial
-        statusEle.style.backgroundColor = 'yellow';
+        statusEle.style.backgroundColor = 'orange';
     }else{
         //server down
         statusEle.style.backgroundColor = 'red';
