@@ -1,4 +1,4 @@
-The emby server is running! Check your email for an invite to "theserver". Playback might be a little choppy still due to some setup I still need to do.
+The emby server is running with no content! Check your email for an invite to "theserver".
 
 
 The content will come back sometime bruh this shit is hard. Requests will still have to wait for approximately a week or whenever them new hard drives come in the mail.
