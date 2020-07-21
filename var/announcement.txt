@@ -1,4 +1,4 @@
-The emby server is running with no content! Check your email for an invite to "theserver".
+Check your email for an invite to "theserver". The content is finally coming back. Currently 1.6/14TB redownloaded.
 
 
 Requests will still have to wait to get filled for approximately a week or whenever them new hard drives come in the mail.
