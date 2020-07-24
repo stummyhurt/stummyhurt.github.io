@@ -1,2 +1,1 @@
-Partially running
-(No requests)
+Up and running 😎
